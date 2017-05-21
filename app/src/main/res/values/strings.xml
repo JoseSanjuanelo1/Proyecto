@@ -21,15 +21,15 @@
     <string name="mensaje">Ciudad guardada con exito</string>
     <string name="error_1">Por favor digite una ciudad</string>
     <string-array name="deptos">
-        <item>@string/meta</item>
         <item>@string/antioquia</item>
+        <item>@string/atlantico</item>
         <item>@string/cauca</item>
-        <item>@string/magdalena</item>
         <item>@string/cordoba</item>
+        <item>@string/guania</item>
+        <item>@string/magdalena</item>
+        <item>@string/meta</item>
         <item>@string/narinio</item>
         <item>@string/tolima</item>
-        <item>@string/guania</item>
-        <item>@string/atlantico</item>
         <item>@string/valledel</item>
     </string-array>
 </resources>

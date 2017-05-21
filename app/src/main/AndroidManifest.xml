@@ -18,8 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistroCiudades"></activity>
-        <activity android:name=".ListarCiudad"></activity>
+        <activity android:name=".RegistroCiudades" />
+        <activity android:name=".ListarCiudad" />
+        <activity android:name=".LaMacarena" />
+        <activity android:name=".Lejania" />
+        <activity android:name=".Guatape" />
+        <activity android:name=".Penol" />
+        <activity android:name=".Baranoa" />
+        <activity android:name=".Salgar" />
+        <activity android:name=".Gorgona" />
+        <activity android:name=".Popayan" />
+        <activity android:name=".Tanti"></activity>
     </application>
 
 </manifest>

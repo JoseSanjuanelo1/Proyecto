@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:fontFamily="casual"
         android:layout_alignParentStart="true">
 
         <LinearLayout
@@ -22,7 +23,8 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary" />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
@@ -67,7 +69,7 @@
 
                             <TextView
                                 android:id="@+id/textView2"
-                                android:layout_width="195dp"
+                                android:layout_width="189dp"
                                 android:layout_height="185dp"
                                 android:layout_weight="1"
                                 android:background="@drawable/inicio"
@@ -105,6 +107,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
+                                android:background="@color/colorAccent"
                                 android:fontFamily="casual"
                                 android:text="@string/buscar"
                                 android:textColor="@android:color/background_dark"
@@ -116,7 +119,9 @@
                             style="@style/Widget.AppCompat.Button.Colored"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/mostrar" />
+                            android:fontFamily="casual"
+                            android:text="@string/mostrar"
+                            android:textColor="@android:color/black" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -141,15 +146,68 @@
                     android:id="@+id/tab3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/r5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="RadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/r4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="RadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/r3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="RadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/r2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="RadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/r1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="RadioButton" />
+
+                        </LinearLayout>
+
+                    </RadioGroup>
 
                     <Button
                         android:id="@+id/btnMostrarListado"
                         style="@style/Widget.AppCompat.Button.Colored"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/mostrar"
-                        android:onClick="mostrarListado1"/>
+                        android:layout_weight="1"
+                        android:onClick="mostrarListado1"
+                        android:text="@string/mostrar" />
+
 
                 </LinearLayout>
             </FrameLayout>
