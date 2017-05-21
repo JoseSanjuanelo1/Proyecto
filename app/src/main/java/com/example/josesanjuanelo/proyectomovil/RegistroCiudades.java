@@ -37,7 +37,7 @@ public class RegistroCiudades extends AppCompatActivity {
     }
 
     public void registrar (View v) {
-    int c= k.size()+1;
+    int c= Departamento.traerCiudades(getApplicationContext()).size()+1;
         if (validar()) {
             String nombreDep, nombreCiu, foto;
             nombreCiu = cajaCiudad.getText().toString().trim();

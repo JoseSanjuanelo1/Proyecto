@@ -39,7 +39,7 @@ public class AdaptadorCiudad extends BaseAdapter {
 
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        TextView id, depart, ciud;
+        TextView idd, depart, ciud;
         ImageView foto;
         LayoutInflater inflater;
         View ItemView;
@@ -50,16 +50,16 @@ public class AdaptadorCiudad extends BaseAdapter {
 
         //captura objetos
 
-        id = (TextView)ItemView.findViewById(R.id.lblId);
+        idd = (TextView)ItemView.findViewById(R.id.lblId);
         depart = (TextView)ItemView.findViewById(R.id.lblNombDep);
         ciud = (TextView)ItemView.findViewById(R.id.lblNombCiu);
         foto = (ImageView) ItemView.findViewById(R.id.imgFoto);
 
         //pasar objetos
 
-        id.setText(ciudad.get(position).getNumero());
+        idd.setText(""+ciudad.get(position).getNumero());
         depart.setText(ciudad.get(position).getNombreDep());
-        ciud.setText(""+ciudad.get(position).getNombCiu());
+        ciud.setText(ciudad.get(position).getNombCiu());
         foto.setImageResource(Integer.parseInt(ciudad.get(position).getFoto()));
 
         //retorno itemview

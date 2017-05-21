@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistroCiudades"></activity>
+        <activity android:name=".ListarCiudad"></activity>
     </application>
 
 </manifest>
