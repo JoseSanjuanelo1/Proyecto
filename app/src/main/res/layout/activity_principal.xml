@@ -15,8 +15,8 @@
         android:layout_alignParentTop="true">
 
         <LinearLayout
-            android:layout_width="463dp"
-            android:layout_height="573dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TabWidget
@@ -41,26 +41,36 @@
                         android:layout_alignParentLeft="true"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:weightSum="1">
 
                         <TextView
                             android:id="@+id/textView"
                             android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:text="TextView" />
+                            android:layout_height="wrap_content"
+                            android:fontFamily="casual"
+                            android:text="@string/tour"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="46sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/textView2"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:text="TextView" />
+                            android:layout_width="195dp"
+                            android:layout_height="185dp"
+                            android:background="@drawable/inicio"
+                            android:textAppearance="@style/TextAppearance.AppCompat" />
 
                         <TextView
                             android:id="@+id/textView3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:fontFamily="casual"
                             android:text="@string/departamentos"
-                            android:textSize="18sp" />
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
 
                         <Spinner
                             android:id="@+id/spinner"
@@ -73,15 +83,19 @@
                             android:orientation="horizontal">
 
                             <SearchView
-                                android:layout_width="209dp"
-                                android:layout_height="wrap_content" />
+                                android:layout_width="114dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.93" />
 
                             <Button
                                 android:id="@+id/btnBuscarPrincipal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="@string/buscar" />
+                                android:fontFamily="casual"
+                                android:text="@string/buscar"
+                                android:textColor="@android:color/background_dark"
+                                android:textStyle="bold" />
                         </LinearLayout>
 
                     </LinearLayout>
