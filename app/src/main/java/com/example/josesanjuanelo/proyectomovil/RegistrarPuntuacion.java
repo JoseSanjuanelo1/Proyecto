@@ -19,6 +19,7 @@ public class RegistrarPuntuacion extends AppCompatActivity {
         setContentView(R.layout.activity_registrar_puntuacion);
 
         res = this.getResources();
+        cajaNombre = (EditText) findViewById(R.id.txtLlave);
         lblPuntacion = (TextView) findViewById(R.id.lblPuntuacionRegistro);
         lblTotal = (TextView) findViewById(R.id.lblTotalRegistro);
     }
@@ -44,7 +45,7 @@ public class RegistrarPuntuacion extends AppCompatActivity {
     public boolean validar(){
         if (cajaNombre.getText().toString().isEmpty() ){
             //Toast.makeText(getApplicationContext(), "Digite por favor el nombre" , Toast.LENGTH_SHORT).show();
-            cajaNombre.setError(getResources().getString(R.string.error_1));
+            cajaNombre.setError(getResources().getString(R.string.error_2));
             return false;
         }
 

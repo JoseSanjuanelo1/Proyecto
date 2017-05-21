@@ -29,7 +29,8 @@
         <activity android:name=".Gorgona" />
         <activity android:name=".Popayan" />
         <activity android:name=".Tanti" />
-        <activity android:name=".RegistrarPuntuacion"></activity>
+        <activity android:name=".RegistrarPuntuacion" />
+        <activity android:name=".ListarPuntos"></activity>
     </application>
 
 </manifest>

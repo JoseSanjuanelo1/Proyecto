@@ -65,4 +65,12 @@ public class Principal extends AppCompatActivity {
         Intent i = new Intent(Principal.this, ListarCiudad.class);
         startActivity(i);
     }
+    public  void mostrarListadoPuntos(View v){
+        Intent i = new Intent(Principal.this, ListarPuntos.class);
+        startActivity(i);
+    }
+    public  void mostrarRegistroPuntos(View v){
+        Intent i = new Intent(Principal.this, RegistrarPuntuacion.class);
+        startActivity(i);
+    }
 }

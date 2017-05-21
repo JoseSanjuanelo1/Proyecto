@@ -1,5 +1,6 @@
 package com.example.josesanjuanelo.proyectomovil;
 
+import android.content.res.Resources;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +18,8 @@ public class Popayan extends AppCompatActivity {
     private TextView resp;
     private ArrayList<Puntuacion> k = new ArrayList();
     SQLiteDatabase db;
-    Double total, punto;
+    Double total;
+    private Resources res;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,8 @@ public class Popayan extends AppCompatActivity {
 
         buscar();
 
+        res = this.getResources();
+        resp = (TextView)findViewById(R.id.lblPuntuacionPopayan);
         r1 = (RadioButton)findViewById(R.id.r1);
         r2 = (RadioButton)findViewById(R.id.r2);
         r3 = (RadioButton)findViewById(R.id.r3);
@@ -42,21 +46,28 @@ public class Popayan extends AppCompatActivity {
         Puntuacion p;
         p = DatosPuntacion.buscar(getApplicationContext(), nombre);
         if(p!=null) {
-            punto = p.getPuntuacion();
+            puntos = p.getPuntuacion();
             total = p.getTotal();
         }
     }
 
     public void puntuar(View v){
-        if(r1.isChecked()) puntos = Double.parseDouble(""+puntos+1);
-        if(r2.isChecked()) puntos = Double.parseDouble(""+puntos+2);
-        if(r3.isChecked()) puntos = Double.parseDouble(""+puntos+3);
-        if(r3.isChecked()) puntos = Double.parseDouble(""+puntos+4);
-        if(r3.isChecked()) puntos = Double.parseDouble(""+puntos+5);
+        String resultado;
+        double form;
+
+        if(r1.isChecked()) puntos = puntos+1;
+        if(r2.isChecked()) puntos = puntos+2;
+        if(r3.isChecked()) puntos = puntos+3;
+        if(r4.isChecked()) puntos = puntos+4;
+        if(r5.isChecked()) puntos = puntos+5;
 
         total = total+1;
 
         Puntuacion n = new Puntuacion ("PY", puntos, total);
-        n.guardar(getApplicationContext());
+        n.modificar(getApplicationContext());
+        form = (puntos/total);
+        resultado = res.getString(R.string.calificacionActual)+" : "+form;
+        resp.setText(resultado);
+        r3.setFocusable(true);
     }
 }

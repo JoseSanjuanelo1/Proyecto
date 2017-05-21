@@ -16,10 +16,10 @@ public class DatosPuntacion {
         String sql1, id;
         double total, puntuacion;
         ArrayList<Puntuacion> puntuaciones = new ArrayList<>();
-        DepartamentosSQLLiteOpenHelper aux = new DepartamentosSQLLiteOpenHelper(contexto, "DBPuntuaciones", null, 1);
+        PuntuacionSQLLiteOpenHelper aux = new PuntuacionSQLLiteOpenHelper(contexto, "DBPuntos", null, 3);
         db = aux.getReadableDatabase();
 
-        sql1 = "Select * from Puntuacion";
+        sql1 = "Select * from Puntuaciones";
         Cursor c = db.rawQuery(sql1, null);
 
         if (c.moveToFirst()){
@@ -42,12 +42,12 @@ public class DatosPuntacion {
         int edad;
         Puntuacion p=null;
 
-        PuntuacionSQLLiteOpenHelper aux = new PuntuacionSQLLiteOpenHelper(contexto, "DBPuntos", null,1);
+        PuntuacionSQLLiteOpenHelper aux = new PuntuacionSQLLiteOpenHelper(contexto, "DBPuntos", null,3);
         db = aux.getReadableDatabase();
 
         //cursor
 
-        sql = "Select * from Puntuacion where nombre='"+idPuntos+"'";
+        sql = "Select * from Puntuaciones where idPuntuacion='"+idPuntos+"'";
 
         Cursor c = db.rawQuery(sql, null);
 

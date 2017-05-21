@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class PuntuacionSQLLiteOpenHelper extends SQLiteOpenHelper {
-    String sql1= "CREATE TABLE Puntuacion(IdPuntuacion text, puntuacion text)";
+    String sql1= "CREATE TABLE Puntuaciones(IdPuntuacion text, puntuacion real, total real)";
 
     public PuntuacionSQLLiteOpenHelper(Context contexto, String name, SQLiteDatabase.CursorFactory factory, int version){
         super(contexto, name, factory, version);
@@ -23,7 +23,7 @@ public class PuntuacionSQLLiteOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXIST Puntuacion");
+        db.execSQL("DROP TABLE IF EXISTS Puntuaciones");
         db.execSQL(sql1);
     }
 }

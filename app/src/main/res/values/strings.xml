@@ -25,6 +25,11 @@
     <string name="puntuacion">Puntuacion Inicial</string>
     <string name="total">No. de Puntuaciones</string>
     <string name="Llave" />
+    <string name="nombre">Nombre</string>
+    <string name="punto">Puntos</string>
+    <string name="no">No.</string>
+    <string name="agregarNP">Agregar Nueva Puntuacion</string>
+    <string name="calificacionActual">La califacion </string>
     <string-array name="deptos">
         <item>@string/antioquia</item>
         <item>@string/atlantico</item>

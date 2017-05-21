@@ -46,10 +46,23 @@ public class Puntuacion {
         SQLiteDatabase db;
         String sql1;
 
-        DepartamentosSQLLiteOpenHelper aux = new DepartamentosSQLLiteOpenHelper(contexto, "DBCiudades", null, 1);
+        PuntuacionSQLLiteOpenHelper aux = new PuntuacionSQLLiteOpenHelper(contexto, "DBPuntos", null, 3);
         db = aux.getWritableDatabase();
 
-        sql1 = "INSERT INTO Ciudades values('"+this.getNumero()+"','"+this.getPuntuacion()+"','"+this.getTotal()+"')";
+        sql1 = "INSERT INTO Puntuaciones values('"+this.getNumero()+"','"+this.getPuntuacion()+"','"+this.getTotal()+"')";
         db.execSQL(sql1);
+    }
+
+    public void modificar(Context contexto){
+        SQLiteDatabase db;
+        String sql;
+
+        PuntuacionSQLLiteOpenHelper aux = new PuntuacionSQLLiteOpenHelper(contexto, "DBPuntos", null, 3);
+        db = aux.getWritableDatabase();
+
+        //FORMA 1
+
+        sql = "UPDATE Puntuaciones set puntuacion='"+this.getPuntuacion()+"', total='"+this.getTotal()+"'where idPuntuacion like '%"+this.getNumero()+"%'";
+        db.execSQL(sql);
     }
 }
