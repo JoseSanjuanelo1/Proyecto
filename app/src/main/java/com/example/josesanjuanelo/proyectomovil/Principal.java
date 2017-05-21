@@ -40,4 +40,8 @@ public class Principal extends AppCompatActivity {
         Intent i = new Intent(Principal.this, RegistroCiudades.class);
         startActivity(i);
     }
+    public  void mostrarListado1(View v){
+        Intent i = new Intent(Principal.this, ListarCiudad.class);
+        startActivity(i);
+    }
 }

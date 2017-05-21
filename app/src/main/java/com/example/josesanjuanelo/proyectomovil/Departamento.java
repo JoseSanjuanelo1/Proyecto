@@ -15,6 +15,7 @@ public class Departamento {
     public static ArrayList<Ciudad> traerCiudades (Context contexto){
         SQLiteDatabase db;
         String sql1, foto, nombreDep, nombCiu;
+        int id;
         ArrayList<Ciudad> ciudades = new ArrayList<>();
         DepartamentosSQLLiteOpenHelper aux = new DepartamentosSQLLiteOpenHelper(contexto, "DBCiudades", null, 1);
         db = aux.getReadableDatabase();
@@ -24,11 +25,12 @@ public class Departamento {
 
         if (c.moveToFirst()){
             do{
+                id = Integer.parseInt(c.getString(0));
                 foto = c.getString(1);
                 nombreDep = c.getString(2);
                 nombCiu = c.getString(3);
 
-                Ciudad n = new Ciudad(foto, nombreDep, nombCiu);
+                Ciudad n = new Ciudad(id, foto, nombreDep, nombCiu);
                 ciudades.add(n);
             }while (c.moveToNext());
         } db.close();
