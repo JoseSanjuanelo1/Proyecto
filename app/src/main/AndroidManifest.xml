@@ -28,7 +28,8 @@
         <activity android:name=".Salgar" />
         <activity android:name=".Gorgona" />
         <activity android:name=".Popayan" />
-        <activity android:name=".Tanti"></activity>
+        <activity android:name=".Tanti" />
+        <activity android:name=".RegistrarPuntuacion"></activity>
     </application>
 
 </manifest>

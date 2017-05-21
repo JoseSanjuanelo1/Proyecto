@@ -34,4 +34,34 @@ public class DatosPuntacion {
         } db.close();
         return  puntuaciones;
     }
+
+    public static Puntuacion buscar(Context contexto, String idPuntos){
+        SQLiteDatabase db;
+        String sql, nombre="";
+        Double total, punto;
+        int edad;
+        Puntuacion p=null;
+
+        PuntuacionSQLLiteOpenHelper aux = new PuntuacionSQLLiteOpenHelper(contexto, "DBPuntos", null,1);
+        db = aux.getReadableDatabase();
+
+        //cursor
+
+        sql = "Select * from Puntuacion where nombre='"+idPuntos+"'";
+
+        Cursor c = db.rawQuery(sql, null);
+
+        if (c.moveToFirst())
+
+            nombre = c.getString(0);
+            punto = Double.parseDouble(c.getString(1));
+            total = Double.parseDouble(c.getString(2));
+
+
+        p = new Puntuacion(nombre, punto, total);
+
+        db.close();
+
+        return p;
+    }
 }

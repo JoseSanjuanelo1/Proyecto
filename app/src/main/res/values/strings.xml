@@ -20,6 +20,11 @@
     <string name="valledel">Valle del Cauca</string>
     <string name="mensaje">Ciudad guardada con exito</string>
     <string name="error_1">Por favor digite una ciudad</string>
+    <string name="error_2">Por favor digite un nombre</string>
+    <string name="enviar">Enviar</string>
+    <string name="puntuacion">Puntuacion Inicial</string>
+    <string name="total">No. de Puntuaciones</string>
+    <string name="Llave" />
     <string-array name="deptos">
         <item>@string/antioquia</item>
         <item>@string/atlantico</item>
