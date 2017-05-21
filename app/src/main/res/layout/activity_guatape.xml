@@ -69,7 +69,7 @@
                     android:fontFamily="casual"
                     android:text="@string/guatapeintro"
                     android:textAlignment="center"
-                    android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+                    android:textColor="@android:drawable/alert_dark_frame" />
 
             </LinearLayout>
 
@@ -85,7 +85,7 @@
                     android:layout_weight="1"
                     android:fontFamily="casual"
                     android:text="@string/gua"
-                    android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                    android:textColor="@android:drawable/editbox_dropdown_dark_frame"
                     android:textSize="12sp" />
 
                 <TextView

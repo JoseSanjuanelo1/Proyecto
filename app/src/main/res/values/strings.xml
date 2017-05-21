@@ -29,7 +29,10 @@
     <string name="punto">Puntos</string>
     <string name="no">No.</string>
     <string name="agregarNP">Agregar Nueva Puntuacion</string>
-    <string name="calificacionActual">La califacion </string>
+    <string name="calificacionActual">La puntuacion del sitio es</string>
+    <string name="guatape">GUATAPE.</string>
+    <string name="guatapeintro">Hoy día, Guatapé cuenta con grandes potenciales para explotar el turismo religioso, el agroturismo, el ecoturismo, la cultura y la aventura. Cuenta con hoteles, restaurantes, barcos, lanchas y sitios turísticos para disfrutar, contemplar, meditar y descansar.</string>
+    <string name="gua">Los hoteles de 3 estrellas tienen un precio medio de $ 94.904.</string>
     <string-array name="deptos">
         <item>@string/antioquia</item>
         <item>@string/atlantico</item>
