@@ -18,6 +18,8 @@
     <string name="guania">Guania</string>
     <string name="atlantico">Atlantico</string>
     <string name="valledel">Valle del Cauca</string>
+    <string name="mensaje">Ciudad guardada con exito</string>
+    <string name="error_1">Por favor digite una ciudad</string>
     <string-array name="deptos">
         <item>@string/meta</item>
         <item>@string/antioquia</item>

@@ -1,12 +1,13 @@
 package com.example.josesanjuanelo.proyectomovil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TabHost;
 
 public class Principal extends AppCompatActivity {
     TabHost th;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,5 +34,10 @@ public class Principal extends AppCompatActivity {
         ts3.setContent(R.id.tab3);
 
         th.addTab(ts3);
+    }
+
+    public  void mostrarRegistro1(View v){
+        Intent i = new Intent(Principal.this, RegistroCiudades.class);
+        startActivity(i);
     }
 }

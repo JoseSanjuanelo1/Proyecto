@@ -30,7 +30,7 @@
             android:layout_weight="0.08" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/txtCiudadRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -40,8 +40,10 @@
 
         <Button
             android:id="@+id/btnRegistrar"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="registrar"
             android:text="@string/registrar" />
     </LinearLayout>
 </RelativeLayout>
