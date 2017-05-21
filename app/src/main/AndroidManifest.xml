@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Principal">
-        </activity>
+        <activity android:name=".Principal" />
         <activity android:name=".ListviewDepartamentos" />
         <activity android:name=".PantallaInicio">
             <intent-filter>
@@ -19,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegistroCiudades"></activity>
     </application>
 
 </manifest>

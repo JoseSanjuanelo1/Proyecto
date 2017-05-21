@@ -10,9 +10,9 @@
         android:id="@+id/tabhPrincipal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,12 +55,24 @@
                             android:textSize="46sp"
                             android:textStyle="bold" />
 
-                        <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="195dp"
-                            android:layout_height="185dp"
-                            android:background="@drawable/inicio"
-                            android:textAppearance="@style/TextAppearance.AppCompat" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="123dp"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="195dp"
+                                android:layout_height="185dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/inicio"
+                                android:textAppearance="@style/TextAppearance.AppCompat" />
+                        </LinearLayout>
 
                         <TextView
                             android:id="@+id/textView3"
@@ -73,7 +85,7 @@
                             android:textStyle="bold" />
 
                         <Spinner
-                            android:id="@+id/spinner"
+                            android:id="@+id/spnDepartamentos"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
 
@@ -83,6 +95,7 @@
                             android:orientation="horizontal">
 
                             <SearchView
+                                android:id="@+id/txtBuscar"
                                 android:layout_width="114dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="0.93" />
@@ -97,6 +110,13 @@
                                 android:textColor="@android:color/background_dark"
                                 android:textStyle="bold" />
                         </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnMostrar"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mostrar" />
 
                     </LinearLayout>
                 </LinearLayout>

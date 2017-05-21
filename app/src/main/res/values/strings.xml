@@ -3,5 +3,31 @@
     <string name="departamentos">Departamentos</string>
     <string name="buscar">Buscar</string>
     <string name="tour">Tourisme NAJOS</string>
-
+    <string name="mostrar">Mostrar</string>
+    <string name="title_activity_registro_ciudades">RegistroCiudades</string>
+    <string name="regitro">Registro</string>
+    <string name="ingreso">Ingrese Ciudad</string>
+    <string name="registrar">Registrar</string>
+    <string name="meta">Meta</string>
+    <string name="antioquia">Antioquia</string>
+    <string name="cauca">Cauca</string>
+    <string name="magdalena">Magdalena</string>
+    <string name="cordoba">Cordoba</string>
+    <string name="narinio">Nariño</string>
+    <string name="tolima">Tolima</string>
+    <string name="guania">Guania</string>
+    <string name="atlantico">Atlantico</string>
+    <string name="valledel">Valle del Cauca</string>
+    <string-array name="deptos">
+        <item>@string/meta</item>
+        <item>@string/antioquia</item>
+        <item>@string/cauca</item>
+        <item>@string/magdalena</item>
+        <item>@string/cordoba</item>
+        <item>@string/narinio</item>
+        <item>@string/tolima</item>
+        <item>@string/guania</item>
+        <item>@string/atlantico</item>
+        <item>@string/valledel</item>
+    </string-array>
 </resources>
