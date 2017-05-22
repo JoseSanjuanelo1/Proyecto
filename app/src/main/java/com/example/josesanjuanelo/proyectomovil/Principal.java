@@ -73,4 +73,12 @@ public class Principal extends AppCompatActivity {
         Intent i = new Intent(Principal.this, RegistrarPuntuacion.class);
         startActivity(i);
     }
+    public  void mostrarRegistroChec(View v){
+        Intent i = new Intent(Principal.this, registrarAyuda.class);
+        startActivity(i);
+    }
+    public  void mostrarListadoChec(View v){
+        Intent i = new Intent(Principal.this, ListarAyuda.class);
+        startActivity(i);
+    }
 }

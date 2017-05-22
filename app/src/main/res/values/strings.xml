@@ -19,8 +19,11 @@
     <string name="atlantico">Atlantico</string>
     <string name="valledel">Valle del Cauca</string>
     <string name="mensaje">Ciudad guardada con exito</string>
+    <string name="mensaje2">Puntuacion para el sitio guardado</string>
+    <string name="mensaje3">Ayuda para el sitio guardado</string>
     <string name="error_1">Por favor digite una ciudad</string>
     <string name="error_2">Por favor digite un nombre</string>
+    <string name="error_3">No se guardo su aporte</string>
     <string name="enviar">Enviar</string>
     <string name="puntuacion">Puntuacion Inicial</string>
     <string name="total">No. de Puntuaciones</string>
@@ -29,10 +32,20 @@
     <string name="punto">Puntos</string>
     <string name="no">No.</string>
     <string name="agregarNP">Agregar Nueva Puntuacion</string>
-    <string name="calificacionActual">La puntuacion del sitio es</string>
+    <string name="calificacionActual">La calificacion para el sitio es</string>
     <string name="guatape">GUATAPE.</string>
     <string name="guatapeintro">Hoy día, Guatapé cuenta con grandes potenciales para explotar el turismo religioso, el agroturismo, el ecoturismo, la cultura y la aventura. Cuenta con hoteles, restaurantes, barcos, lanchas y sitios turísticos para disfrutar, contemplar, meditar y descansar.</string>
     <string name="gua">Los hoteles de 3 estrellas tienen un precio medio de $ 94.904.</string>
+    <string name="puntua">Puntua este sitio</string>
+    <string name="ayuda">Ayuda a los demas a saber que llevar!</string>
+    <string name="abrigo">Abrigo</string>
+    <string name="bloquador">Bloqueador</string>
+    <string name="kitM">Kit Medico</string>
+    <string name="repelente">Repelente</string>
+    <string name="total2">No. de Ayudas</string>
+    <string name="digite">Digite la Id de la vista</string>
+    <string name="id">ID</string>
+    <string name="codigo">Codigo</string>
     <string-array name="deptos">
         <item>@string/antioquia</item>
         <item>@string/atlantico</item>

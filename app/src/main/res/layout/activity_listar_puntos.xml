@@ -21,6 +21,12 @@
             android:touchscreenBlocksFocus="true">
 
             <TextView
+                android:id="@+id/lblId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id" />
+
+            <TextView
                 android:id="@+id/lblNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

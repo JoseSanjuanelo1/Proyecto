@@ -148,6 +148,14 @@
                         android:text="@string/mostrar"
                         android:onClick="mostrarRegistroPuntos"/>
 
+                    <Button
+                        android:id="@+id/btnMostrarRegistroEstadisticas"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mostrar"
+                        android:onClick="mostrarRegistroChec"/>
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -172,6 +180,15 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:onClick="mostrarListadoPuntos"
+                        android:text="@string/mostrar" />
+
+                    <Button
+                        android:id="@+id/btnMostrarListadoEstadisticas"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="mostrarListadoChec"
                         android:text="@string/mostrar" />
 
 
