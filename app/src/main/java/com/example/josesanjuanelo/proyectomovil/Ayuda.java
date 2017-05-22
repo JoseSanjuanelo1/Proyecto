@@ -36,9 +36,7 @@ public class Ayuda {
         this.abrigo = abrigo;
     }
 
-    public double getBloqueador() {
-        return bloqueador;
-    }
+    public double getBloqueador() { return bloqueador; }
 
     public void setBloqueador(double bloqueador) {
         this.bloqueador = bloqueador;

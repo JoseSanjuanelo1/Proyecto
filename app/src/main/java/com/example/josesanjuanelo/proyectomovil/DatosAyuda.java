@@ -28,9 +28,9 @@ public class DatosAyuda {
                 idVista = c.getString(0);
                 abrigo = Double.parseDouble(c.getString(1));
                 bloqueador = Double.parseDouble(c.getString(2));
-                kit = bloqueador = Double.parseDouble(c.getString(3));
-                repelente = bloqueador = Double.parseDouble(c.getString(4));
-                total = bloqueador = Double.parseDouble(c.getString(5));
+                kit = Double.parseDouble(c.getString(3));
+                repelente = Double.parseDouble(c.getString(4));
+                total = Double.parseDouble(c.getString(5));
 
                 Ayuda a = new Ayuda(idVista, abrigo, bloqueador, kit, repelente, total);
                 ayudados.add(a);
